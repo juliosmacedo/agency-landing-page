@@ -1,0 +1,310 @@
+.wrapper {
+    // display: flex;
+    width: 100vw;
+    height: 65vh;
+    transition: all 0.3s ease;
+}
+
+.wrapper img {
+    height: 65vh;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+
+#bottomimage{
+    height: 35vh;
+    object-fit: cover;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: relative;
+    margin-right: 40vw;
+    right: 0vh;
+}
+
+.main{
+    transition:opacity 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    right: relative;
+    margin: 0;
+}
+
+
+.hiddentext{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.maintext{
+    transition:opacity 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    right: relative;
+    margin: 0;
+}
+
+.herotext {
+    padding: 0 6vh;
+}
+
+#bottomtext {
+    padding: 0 5vh;
+}
+
+#logo{
+    margin-right: 3vh;
+    height: 2vh;
+    transition: none;
+}
+
+nav{
+    position: absolute;
+    top: 7vh;
+    left: 7vh;
+    align-items: center;
+    display: flex;
+    z-index: 3;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.columnimage {
+    float: left;
+    width: 60%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'League Spartan';
+}
+
+.bottomwrapper {
+    width: 100vw;
+    height: 35vh;
+}
+
+.column2 {
+    float: left;
+    width: 28%;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.column3 {
+    float: left;
+    width: 43%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.column4 {
+    float: left;
+    width: 29%;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+h3{
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+a{
+    text-decoration: none;
+    margin: 0 2vh;
+    text-transform: lowercase;
+    color: white;
+}
+
+#shopnow{
+    align-self: flex-start;
+    margin-top: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.75rem;
+    color: black;
+    margin: 0;
+    text-transform: none;
+
+}
+
+p {
+    color: hsl(0, 0%, 63%);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.article{
+    margin: 3vh 0;
+}
+.box {
+    margin: 0;
+    box-sizing: border-box;
+    height: 10vh;
+    width: 10vh;
+    background-color: black;
+    display: flex;
+}
+
+
+.boxes-container{
+    position: absolute;
+    bottom: 35vh;
+    display: flex;
+}
+
+
+#arrowright, #arrowleft{
+    margin: auto;
+    height: 3vh;
+}
+
+#shopnowicon{
+    margin: auto;
+    height: 1.8vh;
+}
+
+
+.carousel {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+  }
+  .carousel img {
+    width: 100%;
+    transition: all 0.3s ease;
+    border:8px solid white;
+  }
+  
+  .item {
+    position: absolute;
+    display: none;
+  }
+  
+  .main {
+    display: block;
+  }
+
+
+@media only screen and (max-width: 1125px) {
+    .herotext{
+        margin-bottom: 7vh;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .article{
+        margin: 1vh 0;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .herotext{
+        padding: 0 2vh;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    nav{
+        top: 3vh;
+    left: 2vh;
+    }
+
+    #bottomtext{
+        padding: 0 2vh;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    nav a{
+        display: none;
+    }
+
+    nav{
+        left: 40%;
+        top: 4vh;
+    }
+
+    .columnimage{
+        width: 100vw;
+        height: 42vh;
+    }
+
+    .column{
+        width: 100%;
+        height: 49vh;
+    }
+
+    #bottomtext{
+        margin: 3vh;
+    }
+
+    .herotext{
+        padding: 0 4vh;
+        margin-bottom: 0;
+    }
+
+    .wrapper img{
+        height: 100%;
+    }
+
+    .boxes-container{
+        bottom: 58vh;
+        right: 0;
+    }
+
+    .box{
+        height: 7vh;
+        width: 7vh;
+    }
+
+    #arrowright, #arrowleft{
+        height: 2vh;
+    }
+
+    .bottomwrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .column2, .column3, .column4 {
+        width: 100%;
+    }
+}

@@ -8,6 +8,9 @@ body{
     height: 100vh;
     background-image: url(./images/desktop/image-header.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h1{
@@ -112,6 +115,39 @@ a::before{
     top: 5vh;
     left: 3vh;
     width: 10%;
+}
+
+.nav{
+    position: absolute;
+    top: 5vh;
+    right: 3vh;
+}
+
+.nav a{
+    font-family: 'Barlow';
+    color: white;
+    text-transform: none;
+    margin: 0 4vh;
+    font-size: 1rem;
+}
+
+.nav a::before{
+    background-color: transparent;
+}
+
+.nav a:hover{
+    color: hsl(198, 62%, 26%);
+}
+
+button{
+    border-radius: 30px;
+    border: transparent;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 2vh 2.5vh;
+    margin-right: 2vh;
 }
 
 .griditem{
@@ -226,7 +262,6 @@ a::before{
 }
 
 footer{
-    height: 40vh;
     background-color: #7CC6B7;
     display: flex;
     flex-direction: column;
@@ -252,16 +287,20 @@ footer{
 }
 #slide4{
     background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
-    
+}
+
+.slides-row1, .slides-row2{
+    display: flex;
+    overflow: hidden;
 }
 
 .footerlogo{
     filter: invert(22%) sepia(16%) saturate(559%) hue-rotate(120deg) brightness(52%) contrast(94%);
     height: auto;
-    width: 15%;
+    width: 10%;
     box-sizing: border-box;
     margin-bottom: 4vh;
-    margin-top: 8vh;
+    margin-top: 12vh;
 }
 
 .links{
@@ -270,8 +309,8 @@ footer{
 
 .footer-link{
     text-align: center;
-    width: 10vw;
-    color:#126b59;
+    width: 8vw;
+    color:#17856f;
 }
 
 .fa {
@@ -294,3 +333,302 @@ footer{
     position: initial;
     color:#000000;
 }
+
+
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+.mouse_scroll {
+	display: block;
+	margin-bottom: 3vh;
+    transform: scale(0.7);
+    align-self: center;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+
+    .hero{
+        background-image: url(./images/mobile/image-header.jpg);
+        max-height: 60vh;
+        max-width: 100vw;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .mouse_scroll, .nav{
+        display: none;
+    }
+
+    .logo{
+        width: 30%;
+    }
+    
+    .row{
+        flex-direction: column-reverse;
+    }
+
+    #row2{
+        flex-direction: column;
+    }
+
+    .griditem{
+        width: 100vh;
+        height: 38vh;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    h2 {
+        width: 100vw;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    p {
+        width: 90vw;
+        text-align: center;
+        align-self: center;
+    }
+
+    a{
+        text-align: center;
+    }
+
+    a::before{
+        left: 208px;
+        bottom: 6px;
+    }
+
+    #services{
+        flex-direction: column;
+    }
+
+    .graphic-design{
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+        height: 70vh;
+    }
+
+    .photography{
+        background-image: url(./images/mobile/image-photography.jpg);
+        height: 70vh;
+    }
+
+    h4{
+        width: 70vw;
+    }
+
+    h5{
+        margin-bottom: 2vh;
+        font-size: 1rem;
+    }
+
+    h6{
+        margin-top: 4vh;
+    }
+    .testemonial-grid{
+        flex-direction: column;
+    }
+
+    .testemonial-p, .testemonial-role {
+        width: 77vw;
+    }
+
+    .testemonials-div {
+        height: 130vh;
+    }
+
+    .profile-pic{
+        padding: 6vh 3vh 3vh;
+    }
+
+    .slide{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .slides-wrapper{
+        flex-direction: column;
+        height: 44vh;
+    }
+
+    .footerlogo{
+        width: 50%;
+    }
+
+    .footer-link{
+        width: 33vw;
+    }
+}
+
